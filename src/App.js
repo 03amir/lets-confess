@@ -8,13 +8,13 @@ function App() {
   const [confessions, setConfessions] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:8000/").then((res) => {
+    Axios.get("https://lets-confess.herokuapp.com/").then((res) => {
       setConfessions(res.data);
     });
   }, [confessions]);
 
   function addMsg() {
-    Axios.post("http://localhost:8000/", {
+    Axios.post("https://lets-confess.herokuapp.com/", {
       msg: msg,
     });
     console.log(msg);
