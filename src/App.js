@@ -44,12 +44,7 @@ function App() {
         </div>
 
         <div className="confessions">
-        <div className="card" >
-                <h3>hey all there are you all ate hood now and my mom is a lovely women</h3>
-              </div>
-              <div className="card" >
-                <h3>hey all there are you all ate</h3>
-              </div>
+        
           {confessions.map((msg) => {
             return (
               <div className="card" key={msg._id}>
