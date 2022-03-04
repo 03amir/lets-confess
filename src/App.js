@@ -17,7 +17,7 @@ function App() {
     Axios.post("https://lets-confess.herokuapp.com/", {
       msg: msg,
     });
-    console.log(msg);
+   // console.log(msg);
     setMsg("");
   }
 
@@ -36,13 +36,20 @@ function App() {
           }}
         />
         <button onClick={addMsg}>Add</button>
+        </div>
 
         <div className="confessText">
-          <h2>Past Confession</h2>
+          <h2>Past Confessions</h2>
           <div className="underline"></div>
         </div>
 
         <div className="confessions">
+        <div className="card" >
+                <h3>hey all there are you all ate hood now and my mom is a lovely women</h3>
+              </div>
+              <div className="card" >
+                <h3>hey all there are you all ate</h3>
+              </div>
           {confessions.map((msg) => {
             return (
               <div className="card" key={msg._id}>
@@ -51,7 +58,7 @@ function App() {
             );
           })}
         </div>
-      </div>
+     
     </div>
   );
 }
