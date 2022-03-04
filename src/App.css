@@ -12,7 +12,7 @@
 
 h1{
  font-family: 'Domine', serif; 
- font-size: 36px;
+ font-size: 44px;
  letter-spacing: 4px;
  margin-top: 40px;
 
@@ -27,7 +27,7 @@ h1{
 }
 
 .inputBox input{
-  padding: 8px 12px;
+  padding: 11px 17px;
  border-right: none;
  border: none;
  outline: none;
@@ -40,7 +40,7 @@ h1{
 
 
 button{
-  padding: 8px 15px;
+  padding: 11px 18px;
   border-left: none;
   border: none;
   border-top-right-radius: 3px;
@@ -64,7 +64,7 @@ button{
 }
 
 .confessText h2{
-  font-size: 24px;
+  font-size: 29px;
   font-weight: 500;
   letter-spacing: 1px;
 }
