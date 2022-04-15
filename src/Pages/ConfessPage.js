@@ -16,11 +16,18 @@ function ConfessPage() {
     //not sending a empty confession
 
     if (msg && msgFrom && msgTo) {
+      
       Axios.post("https://openletterr.herokuapp.com/", {
         msg: msg,
         msgTo: msgTo,
         msgFrom: msgFrom,
-      });
+      }).then((res) => {
+        console.log(res);
+        if (res.status == 200) {
+          navigate("/");
+        }})
+      
+     
 
       //clearing all the fields
       setMsg("");
@@ -65,9 +72,10 @@ function ConfessPage() {
           />
 
           <button
-            onClick={() => {
+            onClick={(e) => {
+              e.preventDefault();
               addMsg();
-              navigate("/");
+              
             }}
           >
             Add
