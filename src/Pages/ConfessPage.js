@@ -16,7 +16,7 @@ function ConfessPage() {
     //not sending a empty confession
 
     if (msg && msgFrom && msgTo) {
-      Axios.post("hhttps://openletterr.herokuapp.com/", {
+      Axios.post("https://openletterr.herokuapp.com/", {
         msg: msg,
         msgTo: msgTo,
         msgFrom: msgFrom,
