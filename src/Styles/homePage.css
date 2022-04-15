@@ -1,0 +1,74 @@
+
+.confessText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+  
+  }
+  
+  .confessText h2{
+    font-size: 29px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  .underline{
+    width: 34vw;
+    height: 2px;
+    background-color: #01528A;
+    position: relative;
+    transform: translateY(-8px);
+  }
+  
+  .confessions{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  
+  }
+  
+  .card{
+    
+    padding: 10px;
+    background-color: #01528A;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+  
+    margin-top: 20px;
+  }
+  
+  .card h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-size: 20px;
+  
+  }
+
+  .card h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight:300;
+    font-size: 15px;
+    margin-left: 20px;
+  
+  }
+
+  .right{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  .singleConfession{
+    width: 90%;
+    margin: auto;
+  }
+ 
